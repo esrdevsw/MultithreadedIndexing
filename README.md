@@ -1,24 +1,26 @@
 # MultithreadedIndexing
  Multi-threaded Indexing
 
-Project Name: MultithreadedIndexing
-Student Name: Edivagner Ribeiro
-Student ID: G00411275
+Project Name: MultithreadedIndexing<br>
+Student Name: Edivagner Ribeiro<br>
+Student ID: G00411275<br><br>
 
-In this menu-driven program, we use a simple command line user interface where the
+ In this menu-driven program, we use a simple command line user interface where the
 user must enter three files to run (A text file to parse, a dictionary, and a stop word list). After
 entering these files, it will be possible to build a report with the result of the correlation between
-the files. To avoid exceptions, we implement a try-catch block for each user input.
+the files. To avoid exceptions, we implement a try-catch block for each user input.<br>
+
 To process and parse the text, we use virtual threads in preview mode. We use
 AtomicInteger as a counter to ensure the best functioning of virtual threads. On the FileTextImpl
 class, when we call ProcessParseFile class we implement a catch to handle the
 UnsupportedOperationException and show the instruction to enable the preview with the
-return message:
+return message: <br><br>
 [INFO] try Run with
-java --enable-preview -cp ./indexer.jar ie.atu.sw.Runner
+java --enable-preview -cp ./indexer.jar ie.atu.sw.Runner<br><br>
+
 The application is run using the Runner Class. It accomplishes this by starting the
 APIMenu Class. That class shows a menu and calls all the classes required to run and configure
-the API.
+the API. <br>
 The APIMenu class display a menu with six different options:
 1) Specify Text File - gives the user the option of inserting the text file which is
 then sent to the ProcessParseFile Class.
